@@ -41,12 +41,12 @@ import (
 	"github.com/blang/semver/v4"
 	"github.com/gogo/protobuf/proto"
 	"github.com/pkg/errors"
-	"github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring"
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	monitoringv1alpha1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1alpha1"
-	v1monitoringclient "github.com/prometheus-operator/prometheus-operator/pkg/client/versioned/typed/monitoring/v1"
-	v1alpha1monitoringclient "github.com/prometheus-operator/prometheus-operator/pkg/client/versioned/typed/monitoring/v1alpha1"
-	v1beta1monitoringclient "github.com/prometheus-operator/prometheus-operator/pkg/client/versioned/typed/monitoring/v1beta1"
+	"github.com/klaviyo/prometheus-operator/pkg/apis/monitoring"
+	monitoringv1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1"
+	monitoringv1alpha1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1alpha1"
+	v1monitoringclient "github.com/klaviyo/prometheus-operator/pkg/client/versioned/typed/monitoring/v1"
+	v1alpha1monitoringclient "github.com/klaviyo/prometheus-operator/pkg/client/versioned/typed/monitoring/v1alpha1"
+	v1beta1monitoringclient "github.com/klaviyo/prometheus-operator/pkg/client/versioned/typed/monitoring/v1beta1"
 )
 
 const (

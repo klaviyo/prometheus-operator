@@ -21,16 +21,16 @@ import (
 	"strings"
 	"time"
 
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	monitoringv1alpha1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1alpha1"
-	"github.com/prometheus-operator/prometheus-operator/pkg/assets"
-	monitoringclient "github.com/prometheus-operator/prometheus-operator/pkg/client/versioned"
-	"github.com/prometheus-operator/prometheus-operator/pkg/informers"
-	"github.com/prometheus-operator/prometheus-operator/pkg/k8sutil"
-	"github.com/prometheus-operator/prometheus-operator/pkg/listwatch"
-	"github.com/prometheus-operator/prometheus-operator/pkg/operator"
-	prompkg "github.com/prometheus-operator/prometheus-operator/pkg/prometheus"
-	"github.com/prometheus-operator/prometheus-operator/pkg/webconfig"
+	monitoringv1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1"
+	monitoringv1alpha1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1alpha1"
+	"github.com/klaviyo/prometheus-operator/pkg/assets"
+	monitoringclient "github.com/klaviyo/prometheus-operator/pkg/client/versioned"
+	"github.com/klaviyo/prometheus-operator/pkg/informers"
+	"github.com/klaviyo/prometheus-operator/pkg/k8sutil"
+	"github.com/klaviyo/prometheus-operator/pkg/listwatch"
+	"github.com/klaviyo/prometheus-operator/pkg/operator"
+	prompkg "github.com/klaviyo/prometheus-operator/pkg/prometheus"
+	"github.com/klaviyo/prometheus-operator/pkg/webconfig"
 
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"
@@ -323,7 +323,7 @@ func New(ctx context.Context, conf operator.Config, logger log.Logger, r prometh
 	}
 	level.Info(c.logger).Log("msg", "Kubernetes API capabilities", "endpointslices", endpointSliceSupported)
 	// The operator doesn't yet support the endpointslices API.
-	// See https://github.com/prometheus-operator/prometheus-operator/issues/3862
+	// See https://github.com/klaviyo/prometheus-operator/issues/3862
 	// for details.
 	c.endpointSliceSupported = false
 

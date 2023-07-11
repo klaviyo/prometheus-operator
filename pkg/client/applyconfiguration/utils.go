@@ -17,12 +17,12 @@
 package applyconfiguration
 
 import (
-	v1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	v1alpha1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1alpha1"
-	v1beta1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1beta1"
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/client/applyconfiguration/monitoring/v1"
-	monitoringv1alpha1 "github.com/prometheus-operator/prometheus-operator/pkg/client/applyconfiguration/monitoring/v1alpha1"
-	monitoringv1beta1 "github.com/prometheus-operator/prometheus-operator/pkg/client/applyconfiguration/monitoring/v1beta1"
+	v1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1"
+	v1alpha1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1alpha1"
+	v1beta1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1beta1"
+	monitoringv1 "github.com/klaviyo/prometheus-operator/pkg/client/applyconfiguration/monitoring/v1"
+	monitoringv1alpha1 "github.com/klaviyo/prometheus-operator/pkg/client/applyconfiguration/monitoring/v1alpha1"
+	monitoringv1beta1 "github.com/klaviyo/prometheus-operator/pkg/client/applyconfiguration/monitoring/v1beta1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 )
 

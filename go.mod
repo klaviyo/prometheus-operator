@@ -1,4 +1,4 @@
-module github.com/prometheus-operator/prometheus-operator
+module github.com/klaviyo/prometheus-operator
 
 go 1.20
 
@@ -21,8 +21,8 @@ require (
 	github.com/oklog/run v1.1.0
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus-community/prom-label-proxy v0.6.0
-	github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring v0.66.0
-	github.com/prometheus-operator/prometheus-operator/pkg/client v0.66.0
+	github.com/klaviyo/prometheus-operator/pkg/apis/monitoring v0.66.0
+	github.com/klaviyo/prometheus-operator/pkg/client v0.66.0
 	github.com/prometheus/alertmanager v0.25.0
 	github.com/prometheus/client_golang v1.15.1
 	github.com/prometheus/common v0.44.0
@@ -119,7 +119,7 @@ require (
 )
 
 replace (
-	github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring => ./pkg/apis/monitoring
-	github.com/prometheus-operator/prometheus-operator/pkg/client => ./pkg/client
+	github.com/klaviyo/prometheus-operator/pkg/apis/monitoring => ./pkg/apis/monitoring
+	github.com/klaviyo/prometheus-operator/pkg/client => ./pkg/client
 	k8s.io/klog/v2 => github.com/simonpasquier/klog-gokit/v3 v3.3.0
 )

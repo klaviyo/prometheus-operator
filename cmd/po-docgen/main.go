@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/prometheus-operator/prometheus-operator/pkg/versionutil"
+	"github.com/klaviyo/prometheus-operator/pkg/versionutil"
 )
 
 func main() {

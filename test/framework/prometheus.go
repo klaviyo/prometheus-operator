@@ -35,10 +35,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring"
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	"github.com/prometheus-operator/prometheus-operator/pkg/operator"
-	prometheus "github.com/prometheus-operator/prometheus-operator/pkg/prometheus/server"
+	"github.com/klaviyo/prometheus-operator/pkg/apis/monitoring"
+	monitoringv1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1"
+	"github.com/klaviyo/prometheus-operator/pkg/operator"
+	prometheus "github.com/klaviyo/prometheus-operator/pkg/prometheus/server"
 )
 
 const (

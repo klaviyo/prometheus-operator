@@ -17,7 +17,7 @@
 package v1alpha1
 
 import (
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/client/applyconfiguration/monitoring/v1"
+	monitoringv1 "github.com/klaviyo/prometheus-operator/pkg/client/applyconfiguration/monitoring/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	v1 "k8s.io/client-go/applyconfigurations/meta/v1"

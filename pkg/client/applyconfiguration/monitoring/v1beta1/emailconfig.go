@@ -17,7 +17,7 @@
 package v1beta1
 
 import (
-	v1 "github.com/prometheus-operator/prometheus-operator/pkg/client/applyconfiguration/monitoring/v1"
+	v1 "github.com/klaviyo/prometheus-operator/pkg/client/applyconfiguration/monitoring/v1"
 )
 
 // EmailConfigApplyConfiguration represents an declarative configuration of the EmailConfig type for use

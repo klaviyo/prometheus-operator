@@ -19,8 +19,8 @@ import (
 	"testing"
 	"time"
 
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	monitoringv1alpha1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1alpha1"
+	monitoringv1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1"
+	monitoringv1alpha1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1alpha1"
 	"github.com/stretchr/testify/require"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

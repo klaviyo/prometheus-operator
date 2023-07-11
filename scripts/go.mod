@@ -1,4 +1,4 @@
-module github.com/prometheus-operator/prometheus-operator/tooling
+module github.com/klaviyo/prometheus-operator/tooling
 
 go 1.20
 

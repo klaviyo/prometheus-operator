@@ -32,8 +32,8 @@ import (
 	v1 "k8s.io/api/admission/v1"
 	apiextensionsv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
 
-	"github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1alpha1"
-	"github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1beta1"
+	"github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1alpha1"
+	"github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1beta1"
 )
 
 func TestMutateRule(t *testing.T) {

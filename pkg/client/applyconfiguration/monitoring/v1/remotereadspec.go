@@ -17,7 +17,7 @@
 package v1
 
 import (
-	v1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
+	v1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1"
 )
 
 // RemoteReadSpecApplyConfiguration represents an declarative configuration of the RemoteReadSpec type for use

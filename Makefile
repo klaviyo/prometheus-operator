@@ -10,7 +10,7 @@ endif
 
 CONTAINER_CLI ?= docker
 
-GO_PKG=github.com/prometheus-operator/prometheus-operator
+GO_PKG=github.com/klaviyo/prometheus-operator
 IMAGE_OPERATOR?=quay.io/prometheus-operator/prometheus-operator
 IMAGE_RELOADER?=quay.io/prometheus-operator/prometheus-config-reloader
 IMAGE_WEBHOOK?=quay.io/prometheus-operator/admission-webhook
@@ -244,7 +244,7 @@ bundle.yaml: generate-crds $(shell find example/rbac/prometheus-operator/*.yaml 
 # description fields being removed. It is meant as a workaround for the issue
 # that `kubectl apply -f ...` might fail with the full version of the CRDs
 # because of too long annotations field.
-# See https://github.com/prometheus-operator/prometheus-operator/issues/4355
+# See https://github.com/klaviyo/prometheus-operator/issues/4355
 stripped-down-crds.yaml: $(shell find example/prometheus-operator-crd/*.yaml -type f) $(GOJSONTOYAML_BINARY)
 	: > $@
 	for f in example/prometheus-operator-crd/*.yaml; do echo '---' >> $@; $(GOJSONTOYAML_BINARY) -yamltojson < $$f | jq 'walk(if type == "object" then with_entries(select(.key | test("description") | not)) else . end)' | $(GOJSONTOYAML_BINARY) >> $@; done
@@ -281,7 +281,7 @@ Documentation/compatibility.md: pkg/operator/defaults.go
 	$(MDOX_BINARY) fmt $@
 
 Documentation/api.md: $(TYPES_V1_TARGET) $(TYPES_V1ALPHA1_TARGET) $(TYPES_V1BETA1_TARGET)
-	$(API_DOC_GEN_BINARY) -api-dir "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/" -config "$(PWD)/scripts/docs/config.json" -template-dir "$(PWD)/scripts/docs/templates" -out-file "$(PWD)/Documentation/api.md"
+	$(API_DOC_GEN_BINARY) -api-dir "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/" -config "$(PWD)/scripts/docs/config.json" -template-dir "$(PWD)/scripts/docs/templates" -out-file "$(PWD)/Documentation/api.md"
 
 ##############
 # Formatting #

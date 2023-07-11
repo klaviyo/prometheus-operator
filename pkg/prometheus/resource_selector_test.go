@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"testing"
 
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
+	monitoringv1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1"
 	"github.com/prometheus/prometheus/model/relabel"
 )
 

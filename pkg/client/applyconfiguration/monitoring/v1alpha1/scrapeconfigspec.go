@@ -17,8 +17,8 @@
 package v1alpha1
 
 import (
-	v1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	monitoringv1 "github.com/prometheus-operator/prometheus-operator/pkg/client/applyconfiguration/monitoring/v1"
+	v1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1"
+	monitoringv1 "github.com/klaviyo/prometheus-operator/pkg/client/applyconfiguration/monitoring/v1"
 )
 
 // ScrapeConfigSpecApplyConfiguration represents an declarative configuration of the ScrapeConfigSpec type for use

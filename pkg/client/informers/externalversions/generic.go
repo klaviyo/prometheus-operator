@@ -19,9 +19,9 @@ package externalversions
 import (
 	"fmt"
 
-	v1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1"
-	v1alpha1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1alpha1"
-	v1beta1 "github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring/v1beta1"
+	v1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1"
+	v1alpha1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1alpha1"
+	v1beta1 "github.com/klaviyo/prometheus-operator/pkg/apis/monitoring/v1beta1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
 )
